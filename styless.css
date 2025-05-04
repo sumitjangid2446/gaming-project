@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #00ffcc;
+  }
+
+  .logo img {
+    height: 90px;
+    width: 100px;
+    margin-left: 10px;
+  }
+  .custom-navbar {
+    background-color: #000;
+  }
+  
+  .navbar-nav {
+    gap: 25px;
+  }
+  .navbar{
+     border-bottom: 2px solid #00ffcc;
+      position: fixed;
+  top: 0;
+  border-bottom: 3px solid #00ffe1;
+   
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85); 
+  backdrop-filter: blur(10px); 
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+  padding: 10px 0;
+  }
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: 0.3s ease;
+    text-align: end;
+
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #00ffcc !important;
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  
+/* Section start */
+.hero {
+  min-height: 90vh;
+  /* background: url('https://www.makeneonsign.com/cdn/shop/products/Gametimeneonsign_b17fcc7b-856e-4ce3-973b-9a50d8ffecb4_626x.jpg?v=1620112954') no-repeat center center/cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  background: linear-gradient(90deg, #00ffcc, #0066ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 15px 10px;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #12fbcc, #3282fa);
+  color: black;
+}
+
+.image img {
+  margin-top: 150px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+    background-size: cover;
+  }
+
+  .image img {
+    max-height: 300px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+ 
+
+
+/*home2*/
+.imgs img{
+  height: 400px;
+  width: 380px;
+}
+.main-card{
+  margin-top: 40px;
+  background: linear-gradient(90deg, #00d2a8, #0158db);
+
+}
+/* gaming */
+ .card{
+  margin-top: 20%;
+  /* background: linear-gradient(90deg, #00d2a8, #0158db); */
+  background-color: #000;
+  color: #ffe1b8;
+ }  
+
+ .card-body img{
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 360px;
+  transition: transform 0.7s ease-in-out;
+ }
+
+ .end{
+  border-bottom: 2px solid #00ffcc;
+ }
+ .col-6{
+  margin-top:30px ;
+  text-align: justify;
+  border: 3px solid #00ffcc;
+ }
+ .brdr h2{
+  /* font-size: 60px; */
+    background: linear-gradient(90deg, #00ffcc, #0066ff);
+    -webkit-background-clip: text;
+    
+    /* text-decoration: underline; */
+ }
+
+ .cards
+{
+  border: 3px solid #00ffcc;
+  transition: 0.3s ease;
+}
+.cards:hover{
+  background-color: #70d9d9;
+  color: #000;
+}
+.cards img{
+  height: 270px;
+  object-fit: cover;
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+  filter: brightness(0.6) grayscale(30%);
+}
+.cards img:hover{
+  filter: brightness(1) grayscale(0%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+  /* transform: scale(1.16); */
+}
+/* login section */
+.col-4{
+  border: 3px solid #00ffcc;
+}
+
+/* footer section */
+
+.fcard{
+  
+    font-style: italic;
+    margin-top: 40px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUD044YN00T4SDpsRv4Fq3HaYvpG7aLCyUeOB3uMAg52oKar0deyV3PCOdCd5NE3h_NCY&usqp=CAU');
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position:bottom;  
+} 
+.icon i{
+  color: #d8e1a7;
+  margin-left: 26px;
+}
+.icon i:hover{
+  color: #00ffcc;
+}
+.align h6{
+    margin-left: 300px;
+}
+.card img{
+  width: 404px;
+  height: 330px;
+}
+/* ================= RESPONSIVE FIXES ================= */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .main-card {
+    padding: 15px;
+  }
+
+  .imgs img {
+    width: 100%;
+    height: auto;
+  }
+
+  .brdr h2,
+  .brdr p {
+    text-align: center;
+  }
+
+  .cards img {
+    height: auto;
+  }
+
+  .align h6 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .icon {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .fcard {
+    text-align: center;
+  }
+}
+
+/* ================= FOOTER DARK OVERLAY FIX ================= */
+.fcard {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.fcard::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
